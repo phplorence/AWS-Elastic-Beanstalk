@@ -67,5 +67,5 @@ eb create --single --database
 ```
 >> - Enter Environment Name: Genealogy-dev
 >> - 6. Enter an RDS DB username: boot
->> - 7. boot + pass
+>> - 7. boot + pass: Password is not special character mXXX
 >> - Please make sure that you have git on it.
