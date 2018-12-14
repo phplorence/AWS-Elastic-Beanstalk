@@ -25,6 +25,8 @@ C:\Windows\System32> pip install awsebcli --upgrade
 >>> - Select a platform: 11 Java
 >>> - Java 8
 >>> - n (SSH)
+>>> - keypair name: genealogy
+>>> - Install ssh client in Window 10
 
 >> - 4.2 Configuring the deployment of our Spring Boot application
 >>> - We open: .elasticbeanstalk/config.yml
@@ -59,4 +61,10 @@ global:
 >>>> - Here is location: Genealogy-API\classes\artifacts\genealogy_jar
 
 > - 5. Creating an Elastic Beanstalk Environment with an RDS database
-
+```
+eb create --single --database
+```
+>> - Enter Environment Name: Genealogy-dev
+>> - 6. Enter an RDS DB username: boot
+>> - 7. boot + pass
+>> - Please make sure that you have git on it.
