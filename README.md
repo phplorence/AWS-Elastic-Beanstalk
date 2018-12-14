@@ -69,3 +69,31 @@ eb create --single --database
 >> - 6. Enter an RDS DB username: boot
 >> - 7. boot + pass: Password is not special character mXXX
 >> - Please make sure that you have git on it.
+
+> - 6. Configuring Environment properties for RDS database
+```
+eb status
+eb console
+eb setenv SPRING_DATASOURCE_URL=jdbc:mysql://aar49hhc1w3ghr.cohablpe3kal.ap-southeast-1.rds.amazonaws.com:3306/ebdb SPRING_DATASOURCE_USERNAME=boot SPRING_DATASOURCE_PASSWORD=mxx
+```
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring.datasource.url = jdbc:mysql://localhost:3306/notes_app?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+spring.datasource.username = root
+spring.datasource.password = callicoder
+
+
+## Hibernate Properties
+
+# The SQL dialect makes Hibernate generate better SQL for the chosen database
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+
+# Hibernate ddl auto (create, create-drop, validate, update)
+spring.jpa.hibernate.ddl-auto = update
+```
+
+```
+eb deploy
+eb setenv SERVER_PORT=5000
+eb open
+```
+
