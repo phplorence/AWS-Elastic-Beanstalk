@@ -17,7 +17,7 @@ C:\Windows\System32> eb --version
 C:\Windows\System32> pip install awsebcli --upgrade
 ```
 
-> - 4. Initializing Elastic Beanstalk CLI and Creating an application
+> - 4. Initializing Elastic Beanstalk CLI and Creating an application eb --version
 >> - 4.1 Create folder to put your project and prepare it to push Amazon server
 >>> - Select a default region: 7 (Singapore)
 >>> - You must provide your credentials: https://console.aws.amazon.com/iam/home?#/security_credential (Section 3). You go to Create New Access Key.
