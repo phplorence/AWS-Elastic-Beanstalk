@@ -27,6 +27,7 @@ C:\Windows\System32> pip install awsebcli --upgrade
 >>> - n (SSH)
 >>> - keypair name: genealogy
 >>> - Install ssh client in Window 10
+>>> - http://www.mls-software.com/opensshd.html and default not need to set name:
 
 >> - 4.2 Configuring the deployment of our Spring Boot application
 >>> - We open: .elasticbeanstalk/config.yml
