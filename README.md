@@ -90,10 +90,33 @@ spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDial
 # Hibernate ddl auto (create, create-drop, validate, update)
 spring.jpa.hibernate.ddl-auto = update
 ```
-
-```
 eb deploy
 eb setenv SERVER_PORT=5000
 eb open
 ```
+## How to connecting amazon rds mysql using phpmyadmin
+> - Go to link: https://ap-southeast-1.console.aws.amazon.com/rds/home?region=ap-southeast-1#launch-dbinstance:
+> - Settings:
+>> - DB Instance: Webserver
+>> - Master username: webserver
+>> - Password: keep old
+c
+> - Database Options:
+>> - Database name: genealogy
+>> - Port: 3306
+>> - Endpoint: webserver.cohablpe3kal.ap-southeast-1.rds.amazonaws.com
+>> - mysql -h mysql–instance1.123456789012.us-east-1.rds.amazonaws.com -P 3306 -u mymasteruser -p
+>> Go to xampp/mysql to detect **mysql** 
+>>> - Path of drive: C:\xampp\htdocs\rsd-phpmyadmin
+>>> - Website: http://localhost/rsd-phpmyadmin/setup/
+>>>> - New Server: localhost/
+>>>> - Link: eb setenv SPRING_DATASOURCE_URL=jdbc:mysql://webserver.cohablpe3kal.ap-southeast-1.rds.amazonaws.com:3306/ebdb SPRING_DATASOURCE_USERNAME=webserver SPRING_DATASOURCE_PASSWORD=m00Lorencedeveloper
+
+## Go to EC2 Management Console
+> - Link to: https://ap-southeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#Home:
+https://ap-southeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#LoadBalancers:sort=loadBalancerName
+> - Create 
+
+
+
 
